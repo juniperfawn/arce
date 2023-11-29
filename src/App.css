@@ -1,38 +1,66 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #f9f6ee;
+  color: #141212;
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 160px;
+  margin: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.content__main {
+  padding-bottom: 60px;
+}
+
+.content__main p {
+  font-size: 12px;
+  margin: 0px;
+}
+
+.fancy > .letter {
+  display: inline-block;
+  transition: transform 350ms ease;
+}
+
+.fancy:hover > .letter {
+  transition-duration: 800ms;
+}
+
+@keyframes float {
+  from,
   to {
-    transform: rotate(360deg);
+    transform: translateY(-0%);
   }
+
+  50% {
+    transform: translateY(-3%);
+  }
+}
+
+.fancy:hover {
+  animation: float 5s ease infinite;
+}
+
+.fancy:hover > .letter:nth-child(1) {
+  transform: translate(-40%, -60%) rotate(8deg);
+}
+
+.fancy:hover > .letter:nth-child(2) {
+  transform: translate(-40%, -20%) rotate(4deg);
+}
+
+.fancy:hover > .letter:nth-child(3) {
+  transform: translate(-10%, -60%) rotate(-6deg);
+}
+
+.fancy:hover > .letter:nth-child(4) {
+  transform: translate(0%, -8%) rotate(10deg);
 }
