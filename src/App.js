@@ -1,5 +1,5 @@
 import "./App.css";
-import { Typewriter, useTypewriter, Cursor } from "react-simple-typewriter";
+import { Typewriter } from "react-simple-typewriter";
 
 function App() {
   return (
