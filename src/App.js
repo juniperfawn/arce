@@ -12,7 +12,7 @@ function App() {
             <span className="letter">c</span>
             <span className="letter">é</span>
           </h1>
-          <p>NEW YORK</p>
+          <p>STUDIOS</p>
         </div>
         <Typewriter
           words={["coming soon..."]}
